@@ -1,6 +1,7 @@
 <!-- <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%#= image_path 'cocktails.jpg' %>');">
 
 </div> -->
+<%= link_to "Homepage", root_path, class: "btn btn-secondary btn-lg" %>
 
   <div class="banner-content">
     <h1>Ongaro's Cocktails</h1>
@@ -15,7 +16,7 @@
           <div class="card-description">
             <h2><%= c.name %></h2>
           </div>
-          <%= link_to "", cocktail_path(c), class: 'card-link' %>
+          <%= link_to "Open", cocktail_path(c), class: 'card-link' %>
         </div>
       </div>
     <% end %>
